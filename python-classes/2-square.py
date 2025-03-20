@@ -3,6 +3,7 @@
 Module contenant la classe Square, qui représente un carré.
 """
 
+
 class Square:
     """
     Représente un carré avec un côté donné par l'attribut privé '__size'.
