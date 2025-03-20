@@ -6,5 +6,4 @@ def uppercase(str):
             result += chr(ord(c) - 32)  # Convertir en majuscule et ajouter à result
         else:
             result += c  # Ajouter le caractère tel quel s'il n'est pas une minuscule
-    print(result)  # Imprimer la chaîne accumulée
-
+    print("{}".format(result))  # Imprimer la chaîne accumulée avec .format()
