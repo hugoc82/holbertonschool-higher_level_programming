@@ -53,5 +53,3 @@ class Square:
             int : L'aire du carré.
         """
         return self.__size ** 2
-
-
