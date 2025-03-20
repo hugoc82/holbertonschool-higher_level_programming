@@ -4,4 +4,4 @@ class Square:
 
     def __init__(self, size):
         """Initialize the size of the square."""
-        self._size = size  # Private instance attribute with a single underscore
+        self.__size = size  # Private instance attribute with double underscore
