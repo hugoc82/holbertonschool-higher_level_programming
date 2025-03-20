@@ -18,26 +18,26 @@ class Square:
 
         Lève des exceptions si le type ou la valeur de 'size' n'est pas valide.
         """
-        self.size = size
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
 
     @property
     def size(self):
         """
-        Permet de récupérer la taille du carré.
+        Permet d'obtenir la taille du carré.
         """
         return self.__size
 
     @size.setter
     def size(self, value):
         """
-        Définit la taille du carré. Lève une exception si la valeur est invalide.
+        Définit la taille du carré.
 
         Arguments :
-            value (int): La taille du côté du carré.
-        
-        Lève :
-            TypeError : Si la valeur n'est pas un entier.
-            ValueError : Si la valeur est inférieure à 0.
+            value (int): La nouvelle taille du carré. Doit être un entier >= 0.
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -47,10 +47,11 @@ class Square:
 
     def area(self):
         """
-        Calcule l'aire du carré.
+        Calcule et retourne l'aire du carré.
 
-        Retourne :
-            int: L'aire du carré, calculée comme le carré de la taille du côté.
+        Retour :
+            int : L'aire du carré.
         """
         return self.__size ** 2
+
 
