@@ -3,7 +3,6 @@
 Ce module contient une fonction qui divise tous les éléments d'une matrice.
 """
 
-
 def matrix_divided(matrix, div):
     """
     Divise tous les éléments d'une matrice par un diviseur et retourne une nouvelle matrice.
@@ -43,6 +42,11 @@ def matrix_divided(matrix, div):
     # Vérifier si div est égal à zéro
     if div == 0:
         raise ZeroDivisionError("division by zero")
+    
+    # Gérer le cas de diviser par infini
+    if div == float('inf') or div == -float('inf'):
+        return [[0.0 for element in row] for row in matrix]
 
     # Diviser chaque élément de la matrice par div et arrondir à 2 décimales
     return [[round(element / div, 2) for element in row] for row in matrix]
+
