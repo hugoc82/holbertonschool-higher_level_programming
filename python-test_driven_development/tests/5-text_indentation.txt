@@ -1,0 +1,19 @@
+>>> text_indentation("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? Non autem hoc: igitur ne illud quidem.")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Quonam modo?
+
+Utrum igitur tibi litteram videor an totas paginas commovere?
+
+Non autem hoc:
+
+igitur ne illud quidem.
+
+>>> text_indentation("No punctuation here")
+No punctuation here
+>>> text_indentation("! this is a test: this is the second part? yes!")
+! this is a test:
+
+this is the second part?
+
+yes!
