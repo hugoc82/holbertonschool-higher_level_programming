@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+Ce module contient une fonction qui divise tous les éléments d'une matrice.
+"""
+
+
 def matrix_divided(matrix, div):
     """
     Divise tous les éléments d'une matrice par un diviseur et retourne une nouvelle matrice.
