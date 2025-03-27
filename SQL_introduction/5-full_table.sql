@@ -11,7 +11,7 @@ SELECT
         ORDER BY ORDINAL_POSITION
         SEPARATOR ', '
     ) AS table_columns,
-    CONCAT(', PRIMARY KEY(`id`)') AS primary_key,
+    ', PRIMARY KEY(`id`)' AS primary_key,
     ') ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;' AS table_end
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = 'hbtn_0c_0' AND TABLE_NAME = 'first_table'
