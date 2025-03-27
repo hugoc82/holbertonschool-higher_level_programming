@@ -1,3 +1,4 @@
+-- commentaire
 SELECT 
     'first_table' AS table_name,
     'CREATE TABLE `first_table`(' AS create_statement,
