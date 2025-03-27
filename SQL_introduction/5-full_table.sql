@@ -1,3 +1,4 @@
+-- com
 SELECT
     table_name AS Table,
     GROUP_CONCAT(
