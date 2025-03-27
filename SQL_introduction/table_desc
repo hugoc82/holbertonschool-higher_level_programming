@@ -1,0 +1,2 @@
+mysql:[Warning]Usingapasswordonthecommandlineinterfacecanbeinsecure.
+ERROR1049(42000):Unknowndatabase'hbtn_test_db_5'
