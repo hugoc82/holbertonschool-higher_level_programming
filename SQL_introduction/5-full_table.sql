@@ -1,3 +1,4 @@
+--com
 SELECT 
     CONCAT(
         table_name, 
