@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const fs = require('fs'); // Import the File System module
 
 // Get the file path and string to write from command line arguments
@@ -10,4 +11,3 @@ fs.writeFile(filePath, stringToWrite, 'utf8', (err) => {
     console.error(err); // If an error occurs, print it
   }
 });
-
